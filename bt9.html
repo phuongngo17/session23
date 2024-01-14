@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+        let number = +prompt("Nhập vào một số nguyên dương:");
+        console.log(`Dãy Fibonacci nhỏ hơn ${number}:`);
+        // Tìm dãy Fibonacci
+        let fibonacci = [0, 1];
+        while (fibonacci[fibonacci.length - 1] < number) {
+            let nextNumber = fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2];
+            fibonacci.push(nextNumber);
+        }
+
+        // In ra dãy Fibonacci
+        for (let i = 0; i < fibonacci.length - 1; i++) {
+            console.log(fibonacci[i]);
+        }
+</script>
+</html>

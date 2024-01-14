@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+        let number = +prompt("Nhập vào một số nguyên dương:");
+
+        console.log(`Các số nguyên tố nhỏ hơn ${number}:`);
+        // Hàm kiểm tra số nguyên tố
+        function isPrime(num) {
+            if (num <= 1) {
+                return false;
+            }
+
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+        // In ra tất cả các số nguyên tố nhỏ hơn số nhập vào
+        for (let i = 2; i < number; i++) {
+            if (isPrime(i)) {
+                console.log(i);
+            }
+        }
+</script>
+</html>

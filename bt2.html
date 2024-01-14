@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+        let number = +prompt("Nhập vào một số nguyên dương:");
+        if (isNaN(number) || number <= 0) {
+            console.log("Giá trị nhập vào không hợp lệ.");
+        } else {
+            let factorial = 1;
+            for (let i = 1; i <= number; i++) {
+                factorial *= i;
+            }
+            console.log(`Giai thừa của ${number} là: ${factorial}`);
+        }
+</script>
+</html>
